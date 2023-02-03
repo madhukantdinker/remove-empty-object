@@ -1,7 +1,7 @@
 {
   "name": "remove-empty-object",
   "version": "2.0.1",
-  "description": "\"# My First Commit - Madhukant\"",
+  "description": "\"This Utility is for removing empty object from nested object and return cleaned object.\"",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "files": [
