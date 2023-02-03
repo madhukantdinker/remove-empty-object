@@ -6,7 +6,7 @@ undefined, '', NaN, etc
 @Date - 03/Feb/2023
 */
 export function removeEmptyObjects(inData: any) {
-//Loop through the rool attributes and start checking for empty object
+// Loop through the rool attributes and start checking for empty object
 Object.keys(inData).forEach((key) => {
   // If it's Object
   if (inData[key] && typeof inData[key] === 'object') {
