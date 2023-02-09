@@ -40,18 +40,3 @@ export function removeEmptyObjects(inData: any) {
   // Return in case of data present or it's array with data either undefined
   return Object.keys(inData).length > 0 || inData instanceof Array ? inData : undefined;
 }
-
-let tempData = {
-  a: 'madhukant',
-  b: 'dinker',
-  c: {
-    d: [{}, {}, {}],
-    e: {
-      f: {},
-      g: {},
-      h: {},
-    },
-  },
-}
-
-console.log(JSON.stringify(removeEmptyObjects(tempData)))
