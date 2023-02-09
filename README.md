@@ -23,6 +23,7 @@ let json = {
       g: {},
       h: {},
     },
+    i: [1, {j: 'hello', k: 'world'}, 3, null]
   },
 };
 
@@ -32,8 +33,13 @@ console.log(cleanedJson);
 /*
 Output of cleanedJson:
 
-
- {"a":"madhukant","b":"dinker","c":{"d":[null,null,null]}}
+ {
+  a: 'madhukant',
+  b: 'dinker',
+  c: {
+    i: [1, {j: 'hello', k: 'world'}, 3]
+  },
+}
 */
 
 ```

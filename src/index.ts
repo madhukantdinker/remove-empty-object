@@ -21,6 +21,37 @@ export function removeEmptyObjects(inData: any) {
       delete inData[key];
     }
   });
+
+  // Cleanup empty array and null/s inside array
+  if (inData instanceof Array) {
+    if (Object.values(inData).length === 0) {
+      return undefined 
+    } else {
+      for (let j = 0; j < inData.length; j++) {
+        if (inData[j] === undefined || inData[j] === null) {
+          inData.splice(j, 1)
+          j --
+        }
+      }
+      return inData
+    }
+  }
+
   // Return in case of data present or it's array with data either undefined
   return Object.keys(inData).length > 0 || inData instanceof Array ? inData : undefined;
 }
+
+let tempData = {
+  a: 'madhukant',
+  b: 'dinker',
+  c: {
+    d: [{}, {}, {}],
+    e: {
+      f: {},
+      g: {},
+      h: {},
+    },
+  },
+}
+
+console.log(JSON.stringify(removeEmptyObjects(tempData)))

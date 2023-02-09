@@ -10,6 +10,7 @@ let testData = {
       g: {},
       h: {},
     },
+    i: [1, {j: 'hello', k: 'world'}, 3, null]
   },
 };
 
@@ -17,7 +18,7 @@ let expectedData = {
   a: 'madhukant',
   b: 'dinker',
   c: {
-    d: [, , ,],
+    i: [1, {j: 'hello', k: 'world'}, 3]
   },
 };
 
