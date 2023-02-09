@@ -25,15 +25,15 @@ export function removeEmptyObjects(inData: any) {
   // Cleanup empty array and null/s inside array
   if (inData instanceof Array) {
     if (Object.values(inData).length === 0) {
-      return undefined 
+      return undefined;
     } else {
       for (let j = 0; j < inData.length; j++) {
         if (inData[j] === undefined || inData[j] === null) {
-          inData.splice(j, 1)
-          j --
+          inData.splice(j, 1);
+          j--;
         }
       }
-      return inData
+      return inData;
     }
   }
 
