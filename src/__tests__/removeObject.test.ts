@@ -1,6 +1,6 @@
 import { removeEmptyObjects } from '../index';
 
-let date = new Date()
+let date = new Date();
 
 let testData = {
   a: 'madhukant',
@@ -13,7 +13,7 @@ let testData = {
       h: {},
     },
     i: [1, { j: 'hello', k: 'world' }, 3, null],
-    l: date
+    l: date,
   },
 };
 
@@ -22,7 +22,7 @@ let expectedData = {
   b: 'dinker',
   c: {
     i: [1, { j: 'hello', k: 'world' }, 3],
-    l: date
+    l: date,
   },
 };
 
