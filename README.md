@@ -23,7 +23,8 @@ let json = {
       g: {},
       h: {},
     },
-    i: [1, {j: 'hello', k: 'world'}, 3, null]
+    i: [1, {j: 'hello', k: 'world'}, 3, null],
+    l: new Date()
   },
 };
 
@@ -37,7 +38,8 @@ Output of cleanedJson:
   a: 'madhukant',
   b: 'dinker',
   c: {
-    i: [1, {j: 'hello', k: 'world'}, 3]
+    i: [1, {j: 'hello', k: 'world'}, 3],
+    l: 2023-02-10T12:51:35.831Z
   },
 }
 */

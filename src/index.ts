@@ -9,7 +9,7 @@ export function removeEmptyObjects(inData: any) {
   // Loop through the rool attributes and start checking for empty object
   Object.keys(inData).forEach((key) => {
     // If it's Object
-    if (inData[key] && typeof inData[key] === 'object') {
+    if (inData[key] && typeof inData[key] === 'object' && !(inData[key] instanceof Date)) {
       // Call the same function with new Object
       const childObject = removeEmptyObjects(inData[key]);
       // Delete if there is no child inside Object
